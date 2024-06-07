@@ -75,3 +75,11 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
+
+
+[merge]
+    tool = unityyamlmerge
+
+[mergetool "unityyamlmerge"]
+   trustExitCode = false
+   cmd = 'C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Data\Tools\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
